@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>架空ポケモン生成AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>架空ポケモン生成AI</h1>
+  
+  <div class="form-box">
+    <label>タイプ1:</label>
+    <select id="type1">
+      <option>ノーマル</option><option>ほのお</option><option>みず</option>
+      <option>でんき</option><option>くさ</option><option>こおり</option>
+      <option>かくとう</option><option>どく</option><option>じめん</option>
+      <option>ひこう</option><option>エスパー</option><option>むし</option>
+      <option>いわ</option><option>ゴースト</option><option>ドラゴン</option>
+      <option>あく</option><option>はがね</option><option>フェアリー</option>
+    </select>
+    
+    <label>タイプ2:</label>
+    <select id="type2">
+      <option>なし</option>
+      <option>ノーマル</option><option>ほのお</option><option>みず</option>
+      <option>でんき</option><option>くさ</option><option>こおり</option>
+      <option>かくとう</option><option>どく</option><option>じめん</option>
+      <option>ひこう</option><option>エスパー</option><option>むし</option>
+      <option>いわ</option><option>ゴースト</option><option>ドラゴン</option>
+      <option>あく</option><option>はがね</option><option>フェアリー</option>
+    </select>
+
+    <label>イメージ:</label>
+    <input type="text" id="image" placeholder="例: 電気+ねずみ">
+
+    <label>その他:</label>
+    <input type="text" id="other" placeholder="例: アローラのすがた">
+
+    <button onclick="generatePokemon()">確定</button>
+  </div>
+
+  <div id="result" class="result-box"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
